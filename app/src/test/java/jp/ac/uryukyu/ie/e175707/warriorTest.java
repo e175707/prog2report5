@@ -1,12 +1,10 @@
 package jp.ac.uryukyu.ie.e175707;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
-public class warriorTest {
      
 class WarriorTest {
    @Test
-   void attackWithWeponSkillTest() {
+   void attackwithWeponSkillTest() {
     int defaultWarriorAttack = 100;
     int previousEnemyHitPoint;
     Warrior demoWarrior = new Warrior("デモ戦士", 400, defaultWarriorAttack);
@@ -17,6 +15,5 @@ class WarriorTest {
         slime.attack(demoWarrior);
         assertEquals(previousEnemyHitPoint - slime.hitPoint, (int)(1.5 * defaultWarriorAttack));
     }
-}
 }
 }
